@@ -4,13 +4,13 @@ function calculateMinCost() {
 	ler arr1 = str.split(",");
 	let res = 0;
 	while(arr1.length > 1){
+		arr1.sort(function(a, b){
+		  return a-b;
+	  });
 	  let first = arr1.shift();
 	  let second = arr1.shift();
 	  res += first + second;
-	  arr1.push(first + second);
-	  arr1.sort(function(a, b){
-		  return a-b;
-	  });
+	  arr1.push(first + second); 
 	}
 	let output = document.getElementById("result");
 	output.innerText = res;
