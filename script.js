@@ -1,6 +1,7 @@
 function calculateMinCost() {
   //your code here
-	let arr1 = [];
+	function minCost(arr, n){
+		let arr1 = [];
   for(let i=0; i<arr.length; i++){
 	  arr1.push(arr[i]);
   }
@@ -18,4 +19,8 @@ function calculateMinCost() {
 	  });
   }
 	return res;
+	}
+	minCost();
 }  
+let output = document.getElementById("result");
+output.innerText = calculateMinCost();
