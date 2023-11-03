@@ -1,4 +1,4 @@
-function calculateMinCost(arr) {
+function calculateMinCost() {
   //your code here
 	let arr1 = [];
   for(let i=0; i<arr.length; i++){
