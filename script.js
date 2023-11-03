@@ -7,8 +7,8 @@ function calculateMinCost() {
 		arr1.sort(function(a, b){
 		  return a-b;
 	  });
-	  let first = arr1.shift();
-	  let second = arr1.shift();
+	  let first = parseInt(arr1.shift());
+	  let second = parseInt(arr1.shift());
 	  res += first + second;
 	  arr1.push(first + second); 
 	}
